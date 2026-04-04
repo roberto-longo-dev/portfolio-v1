@@ -6,7 +6,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="hero" className="pt-16 pb-4">
+    <section id="hero" className="pb-4">
       <p className="font-dm-mono text-xs text-muted uppercase tracking-widest mb-8">
         Available for opportunities
       </p>
