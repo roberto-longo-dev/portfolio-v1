@@ -1,13 +1,48 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import BetPlatformCaseStudy from "@/components/case-studies/BetPlatform";
 
-const caseStudies: Record<string, { title: string; component: React.ComponentType }> = {
-  betplatform: { title: "BetPlatform", component: BetPlatformCaseStudy },
+type CaseStudy = {
+  title: string;
+  description: string;
+  ogImage: string;
+  component: React.ComponentType;
+};
+
+const caseStudies: Record<string, CaseStudy> = {
+  betplatform: {
+    title: "BetPlatform",
+    description:
+      "Enterprise betting platform: JWT auth with refresh token rotation, geoblocking via Cloudflare Workers, real-time WebSockets, PostgreSQL and Redis.",
+    ogImage: "/og-image-betplatform.png",
+    component: BetPlatformCaseStudy,
+  },
 };
 
 export function generateStaticParams() {
   return Object.keys(caseStudies).map((slug) => ({ slug }));
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const study = caseStudies[params.slug];
+  if (!study) return {};
+
+  return {
+    title: `${study.title} — Roberto Longo`,
+    description: study.description,
+    openGraph: {
+      title: `${study.title} — Roberto Longo`,
+      description: study.description,
+      images: [{ url: study.ogImage, width: 1200, height: 630, alt: study.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${study.title} — Roberto Longo`,
+      description: study.description,
+      images: [study.ogImage],
+    },
+  };
 }
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
