@@ -13,8 +13,8 @@ const links = [
   },
   {
     label: "GitHub",
-    href: "https://github.com/robertolongo",
-    display: "github.com/robertolongo",
+    href: "https://github.com/roberto-longo-dev",
+    display: "github.com/roberto-longo-dev",
   },
 ];
 
