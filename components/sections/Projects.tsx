@@ -53,14 +53,18 @@ export default function Projects() {
               ))}
             </div>
             {project.links && (
-              <div className="flex gap-4">
-                {project.links.map(({ label, href }) => (
+              <div className="flex gap-2">
+                {project.links.map(({ label, href }, i) => (
                   <a
                     key={label}
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-dm-mono text-[10px] text-accent uppercase tracking-widest hover:underline"
+                    className={
+                      i === 0
+                        ? "px-3 py-1.5 bg-accent text-background text-xs font-medium rounded-sm hover:opacity-90 transition-opacity"
+                        : "px-3 py-1.5 border border-border text-foreground text-xs font-medium rounded-sm hover:border-muted transition-colors"
+                    }
                   >
                     {label}
                   </a>
