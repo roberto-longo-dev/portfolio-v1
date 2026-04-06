@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import BetPlatformCaseStudy from "@/components/case-studies/BetPlatform";
+import AemEdsCaseStudy from "@/components/case-studies/AemEds";
 
 type CaseStudy = {
   title: string;
@@ -17,6 +18,13 @@ const caseStudies: Record<string, CaseStudy> = {
       "Enterprise betting platform: JWT auth with refresh token rotation, geoblocking via Cloudflare Workers, real-time WebSockets, PostgreSQL and Redis.",
     ogImage: "/og-image-betplatform.png",
     component: BetPlatformCaseStudy,
+  },
+  "aem-eds": {
+    title: "Enterprise Pharma Web Platform",
+    description:
+      "Zero Trust security architecture, component acceleration framework, and multi-language governance for a European pharma corporate client on AEM Edge Delivery Services.",
+    ogImage: "/og-image-aem-eds.png",
+    component: AemEdsCaseStudy,
   },
 };
 

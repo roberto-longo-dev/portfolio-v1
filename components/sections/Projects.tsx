@@ -4,14 +4,27 @@ import SectionLabel from "@/components/ui/SectionLabel";
 const projects = [
   {
     title: "BetPlatform",
+    subtitle: null,
     description:
       "Enterprise betting platform: JWT auth, geoblocking via Cloudflare Workers, real-time WebSockets, PostgreSQL.",
     badge: "Live",
     slug: "betplatform",
     stack: ["Node.js", "Fastify", "PostgreSQL", "Cloudflare Workers", "Next.js"],
     links: [
-      { label: "Live Demo", href: "https://betplatform.robertolongo.dev" },
-      { label: "API Docs", href: "https://betplatformapi-production.up.railway.app/docs" },
+      { label: "Live Demo", href: "https://betplatform.robertolongo.dev", external: true },
+      { label: "API Docs", href: "https://betplatformapi-production.up.railway.app/docs", external: true },
+    ],
+  },
+  {
+    title: "Enterprise Pharma Web Platform",
+    subtitle: "AEM Edge Delivery Services",
+    description:
+      "Zero Trust security architecture, component acceleration framework, and multi-language governance for a European pharma corporate client.",
+    badge: "Deloitte Digital · 2024",
+    slug: "aem-eds",
+    stack: ["AEM EDS", "Cloudflare Workers", "Zero Trust", "Azure AD", "Vanilla JS", "Universal Editor"],
+    links: [
+      { label: "Case Study", href: "/projects/aem-eds", external: false },
     ],
   },
 ];
@@ -27,14 +40,21 @@ export default function Projects() {
             className="group p-6 border border-border rounded-sm hover:border-muted transition-colors"
           >
             <div className="flex items-start justify-between mb-3">
-              <Link
-                href={`/projects/${project.slug}`}
-                className="text-sm font-medium text-foreground hover:text-accent transition-colors"
-              >
-                {project.title}
-              </Link>
+              <div>
+                <Link
+                  href={`/projects/${project.slug}`}
+                  className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                >
+                  {project.title}
+                </Link>
+                {project.subtitle && (
+                  <p className="font-dm-mono text-[10px] text-muted uppercase tracking-wide mt-0.5">
+                    {project.subtitle}
+                  </p>
+                )}
+              </div>
               {project.badge && (
-                <span className="font-dm-mono text-[10px] text-accent uppercase tracking-widest">
+                <span className="font-dm-mono text-[10px] text-accent uppercase tracking-widest shrink-0 ml-4">
                   {project.badge}
                 </span>
               )}
@@ -54,21 +74,27 @@ export default function Projects() {
             </div>
             {project.links && (
               <div className="flex gap-2">
-                {project.links.map(({ label, href }, i) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={
-                      i === 0
-                        ? "px-3 py-1.5 bg-accent text-background text-xs font-medium rounded-sm hover:opacity-90 transition-opacity"
-                        : "px-3 py-1.5 border border-border text-foreground text-xs font-medium rounded-sm hover:border-muted transition-colors"
-                    }
-                  >
-                    {label}
-                  </a>
-                ))}
+                {project.links.map(({ label, href, external }, i) => {
+                  const className =
+                    i === 0
+                      ? "px-3 py-1.5 bg-accent text-background text-xs font-medium rounded-sm hover:opacity-90 transition-opacity"
+                      : "px-3 py-1.5 border border-border text-foreground text-xs font-medium rounded-sm hover:border-muted transition-colors";
+                  return external ? (
+                    <a
+                      key={label}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={className}
+                    >
+                      {label}
+                    </a>
+                  ) : (
+                    <Link key={label} href={href} className={className}>
+                      {label}
+                    </Link>
+                  );
+                })}
               </div>
             )}
           </div>
