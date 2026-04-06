@@ -21,9 +21,27 @@ export default function BetPlatformCaseStudy() {
           Enterprise betting platform backend demonstrating production-grade patterns: edge
           security, real-time data, and auth infrastructure.
         </p>
-        <span className="font-dm-mono text-xs text-accent uppercase tracking-widest mt-4 inline-block">
-          In Progress
-        </span>
+        <div className="flex items-center gap-6 mt-4">
+          <span className="font-dm-mono text-xs text-accent uppercase tracking-widest">
+            Live
+          </span>
+          <a
+            href="https://betplatform.robertolongo.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-dm-mono text-xs text-accent uppercase tracking-widest hover:underline"
+          >
+            Live Demo →
+          </a>
+          <a
+            href="https://betplatformapi-production.up.railway.app/docs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-dm-mono text-xs text-muted uppercase tracking-widest hover:text-accent hover:underline transition-colors"
+          >
+            API Docs →
+          </a>
+        </div>
       </header>
 
       <section>
@@ -109,10 +127,9 @@ export default function BetPlatformCaseStudy() {
         <SectionLabel>Status</SectionLabel>
         <p className="mt-4 text-muted text-sm leading-relaxed max-w-2xl">
           <span className="font-dm-mono text-xs text-accent uppercase tracking-widest mr-3">
-            In Progress
+            Live
           </span>
-          Backend architecture complete. Currently implementing WebSocket real-time feed and
-          Cloudflare Worker geoblocking.
+          Deployed on Railway (API), Vercel (frontend), Cloudflare (geo-worker coming soon).
         </p>
       </section>
 

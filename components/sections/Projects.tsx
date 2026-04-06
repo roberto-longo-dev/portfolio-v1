@@ -6,9 +6,13 @@ const projects = [
     title: "BetPlatform",
     description:
       "Enterprise betting platform: JWT auth, geoblocking via Cloudflare Workers, real-time WebSockets, PostgreSQL.",
-    badge: "In Progress",
+    badge: "Live",
     slug: "betplatform",
     stack: ["Node.js", "Fastify", "PostgreSQL", "Cloudflare Workers", "Next.js"],
+    links: [
+      { label: "Live Demo", href: "https://betplatform.robertolongo.dev" },
+      { label: "API Docs", href: "https://betplatformapi-production.up.railway.app/docs" },
+    ],
   },
 ];
 
@@ -18,15 +22,17 @@ export default function Projects() {
       <SectionLabel>Projects</SectionLabel>
       <div className="mt-6 grid sm:grid-cols-2 gap-4">
         {projects.map((project) => (
-          <Link
+          <div
             key={project.slug}
-            href={`/projects/${project.slug}`}
-            className="group block p-6 border border-border rounded-sm hover:border-muted transition-colors"
+            className="group p-6 border border-border rounded-sm hover:border-muted transition-colors"
           >
             <div className="flex items-start justify-between mb-3">
-              <h3 className="text-sm font-medium text-foreground group-hover:text-accent transition-colors">
+              <Link
+                href={`/projects/${project.slug}`}
+                className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+              >
                 {project.title}
-              </h3>
+              </Link>
               {project.badge && (
                 <span className="font-dm-mono text-[10px] text-accent uppercase tracking-widest">
                   {project.badge}
@@ -36,7 +42,7 @@ export default function Projects() {
             <p className="text-sm text-muted leading-relaxed mb-4">
               {project.description}
             </p>
-            <div className="flex flex-wrap gap-1.5">
+            <div className="flex flex-wrap gap-1.5 mb-4">
               {project.stack.map((tech) => (
                 <span
                   key={tech}
@@ -46,7 +52,22 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-          </Link>
+            {project.links && (
+              <div className="flex gap-4">
+                {project.links.map(({ label, href }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-dm-mono text-[10px] text-accent uppercase tracking-widest hover:underline"
+                  >
+                    {label}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
         ))}
 
         {/* Placeholder card */}
