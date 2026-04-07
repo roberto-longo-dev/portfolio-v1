@@ -23,7 +23,7 @@ export default function Hero() {
           Dev lead on two major enterprise projects. Full-stack background across content platforms, edge infrastructure, and modern web delivery.
       </p>
 
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap items-center gap-4">
         <button
           onClick={() => scrollTo("projects")}
           className="px-5 py-2.5 bg-accent text-background text-sm font-medium rounded-sm hover:opacity-90 transition-opacity"

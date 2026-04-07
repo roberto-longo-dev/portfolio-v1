@@ -29,7 +29,7 @@ export default function BetPlatformCaseStudy() {
             href="https://betplatform.robertolongo.dev"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-dm-mono text-xs text-accent uppercase tracking-widest hover:underline"
+            className="px-3 py-1.5 bg-accent text-background text-xs font-medium rounded-sm hover:opacity-90 transition-opacity"
           >
             Live Demo →
           </a>
@@ -37,7 +37,7 @@ export default function BetPlatformCaseStudy() {
             href="https://betplatformapi-production.up.railway.app/docs"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-dm-mono text-xs text-muted uppercase tracking-widest hover:text-accent hover:underline transition-colors"
+            className="px-3 py-1.5 border border-border text-foreground text-xs font-medium rounded-sm hover:border-muted transition-colors"
           >
             API Docs →
           </a>

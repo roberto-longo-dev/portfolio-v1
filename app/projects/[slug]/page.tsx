@@ -65,7 +65,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         href="/#projects"
         className="font-dm-mono text-xs text-muted uppercase tracking-widest hover:text-foreground transition-colors mb-12 inline-block"
       >
-        Back to Projects
+        ← Back to Projects
       </Link>
       <CaseStudy />
     </main>
