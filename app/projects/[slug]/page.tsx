@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import BetPlatformCaseStudy from "@/components/case-studies/BetPlatform";
 import AemEdsCaseStudy from "@/components/case-studies/AemEds";
+import AwakeCaseStudy from "@/components/case-studies/Awake";
 
 type CaseStudy = {
   title: string;
@@ -25,6 +26,13 @@ const caseStudies: Record<string, CaseStudy> = {
       "Zero Trust security architecture, component acceleration framework, and multi-language governance for a European pharma corporate client on AEM Edge Delivery Services.",
     ogImage: "/og-image-aem-eds.png",
     component: AemEdsCaseStudy,
+  },
+  awake: {
+    title: "Awake — Specialty Coffee Brand",
+    description:
+      "Full-stack headless e-commerce platform for a fictional Italian specialty coffee roaster. Next.js 15, Sanity v3, Stripe, NextAuth, PostgreSQL.",
+    ogImage: "/og-image-awake.png",
+    component: AwakeCaseStudy,
   },
 };
 

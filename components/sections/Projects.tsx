@@ -4,9 +4,9 @@ import SectionLabel from "@/components/ui/SectionLabel";
 const projects = [
   {
     title: "BetPlatform",
-    subtitle: "Node.js · Fastify · Cloudflare Workers",
+    subtitle: "Enterprise Betting Backend",
     description:
-      "Enterprise betting platform: JWT auth, geoblocking via Cloudflare Workers, real-time WebSockets, PostgreSQL.",
+      "JWT auth with refresh token rotation, geoblocking via Cloudflare Workers, real-time WebSockets, PostgreSQL.",
     badge: "Live",
     slug: "betplatform",
     stack: ["Node.js", "Fastify", "PostgreSQL", "Cloudflare Workers", "Next.js"],
@@ -20,6 +20,16 @@ const projects = [
     badge: "Case Study",
     slug: "aem-eds",
     stack: ["AEM EDS", "Cloudflare Workers", "Zero Trust", "Azure AD", "Vanilla JS", "Universal Editor"],
+    liveUrl: null,
+  },
+  {
+    title: "Awake",
+    subtitle: "Headless E-commerce Platform",
+    description:
+      "Headless e-commerce for a fictional Italian specialty coffee brand. CMS-driven content, authentication, e-commerce, and subscription payments.",
+    badge: "In Progress",
+    slug: "awake",
+    stack: ["Next.js 15", "Sanity v3", "Stripe", "NextAuth v5", "PostgreSQL", "Turborepo"],
     liveUrl: null,
   },
 ];
@@ -52,16 +62,9 @@ export default function Projects() {
 
             <p className="text-sm text-muted leading-relaxed mb-4">{project.description}</p>
 
-            <div className="flex flex-wrap gap-1.5 mb-6">
-              {project.stack.map((tech) => (
-                <span
-                  key={tech}
-                  className="font-dm-mono text-[10px] text-muted uppercase tracking-wide"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+            <p className="font-dm-mono text-[10px] text-muted uppercase tracking-wide mb-6">
+              {project.stack.join(" · ")}
+            </p>
 
             <div className="flex items-center gap-2 mt-auto">
               <Link
