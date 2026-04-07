@@ -4,7 +4,6 @@ import SectionLabel from "@/components/ui/SectionLabel";
 const projects = [
   {
     title: "BetPlatform",
-    subtitle: "Node.js · Fastify · Cloudflare Workers",
     description:
       "Enterprise betting platform: JWT auth, geoblocking via Cloudflare Workers, real-time WebSockets, PostgreSQL.",
     badge: "Live",
