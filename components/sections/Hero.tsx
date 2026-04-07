@@ -16,11 +16,11 @@ export default function Hero() {
       </h1>
 
       <p className="text-lg text-muted font-medium mb-3">
-        Full-Stack Engineer · Backend &amp; Edge Infrastructure
+        Senior Web Engineer · Enterprise Systems &amp; Modern Stack
       </p>
 
       <p className="text-base text-muted max-w-xl leading-relaxed mb-12">
-        Building scalable web platforms with Node.js, TypeScript and Cloudflare edge.
+          Dev lead on two major enterprise projects. Full-stack background across content platforms, edge infrastructure, and modern web delivery.
       </p>
 
       <div className="flex flex-wrap gap-4">

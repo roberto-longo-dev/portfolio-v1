@@ -6,18 +6,22 @@ export default function About() {
       <SectionLabel>About</SectionLabel>
       <div className="mt-6 space-y-4 max-w-2xl text-muted leading-relaxed">
         <p>
-          Full-stack engineer with 5 years of enterprise backend experience. I&apos;ve led teams
-          of 5 engineers across two large-scale enterprise projects, owning architecture
-          decisions, delivery timelines, and engineering culture.
+          I&apos;m Roberto Longo, a senior web engineer with 5 years of enterprise experience
+          building and leading delivery on large-scale web platforms.
         </p>
         <p>
-          Deep background in OSGi/Sling-based platforms, REST API design, and Cloudflare Zero
-          Trust network configuration. I design systems with security and performance at the
-          edge as first-class concerns.
+          I&apos;ve also served as dev lead across the last two major projects — owning architecture decisions,
+          managing cross-functional teams, and translating complex business requirements into
+          technical solutions that ship on time.
         </p>
         <p>
-          Currently expanding into Node.js full-stack — building products end-to-end with
-          Fastify, Next.js, PostgreSQL, and Cloudflare Workers.
+          My background is in content-driven platforms and edge infrastructure, with hands-on
+          experience across the full stack: from backend services and CDN configuration to
+          component systems and frontend delivery.
+        </p>
+        <p>
+          I work best in environments where engineering rigour, clear ownership, and long-term
+          maintainability matter.
         </p>
       </div>
     </section>

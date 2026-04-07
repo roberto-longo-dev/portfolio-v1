@@ -23,7 +23,7 @@ export default function Contact() {
     <section id="contact" className="pb-24">
       <SectionLabel>Contact</SectionLabel>
       <p className="mt-6 text-muted text-sm max-w-md leading-relaxed mb-8">
-        Open to full-time roles and select freelance projects. Reach out via email or connect
+        Open to full-time roles and select freelance projects.<br /> Reach out via email or connect
         on LinkedIn.
       </p>
       <div className="space-y-3">

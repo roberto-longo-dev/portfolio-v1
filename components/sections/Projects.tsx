@@ -4,7 +4,7 @@ import SectionLabel from "@/components/ui/SectionLabel";
 const projects = [
   {
     title: "BetPlatform",
-    subtitle: null,
+    subtitle: "Node.js · Fastify · Cloudflare Workers",
     description:
       "Enterprise betting platform: JWT auth, geoblocking via Cloudflare Workers, real-time WebSockets, PostgreSQL.",
     badge: "Live",
@@ -20,7 +20,7 @@ const projects = [
     subtitle: "AEM Edge Delivery Services",
     description:
       "Zero Trust security architecture, component acceleration framework, and multi-language governance for a European pharma corporate client.",
-    badge: "Deloitte Digital · 2024",
+    badge: "Deloitte Digital · 2025",
     slug: "aem-eds",
     stack: ["AEM EDS", "Cloudflare Workers", "Zero Trust", "Azure AD", "Vanilla JS", "Universal Editor"],
     links: [
