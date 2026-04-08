@@ -6,7 +6,7 @@ export default function About() {
       <SectionLabel>About</SectionLabel>
       <div className="mt-6 space-y-4 max-w-2xl text-muted leading-relaxed">
         <p>
-          I&apos;m Roberto Longo, a senior web engineer with 5 years of enterprise experience
+          I&apos;m Roberto Longo, a Full-Stack Engineer with 5 years of enterprise experience
           building and leading delivery on large-scale web platforms.
         </p>
         <p>

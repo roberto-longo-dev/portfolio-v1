@@ -16,7 +16,7 @@ export default function Hero() {
       </h1>
 
       <p className="text-lg text-muted font-medium mb-3">
-        Senior Web Engineer · Enterprise Systems &amp; Modern Stack
+        Full-Stack Engineer · Enterprise Systems &amp; Modern Stack
       </p>
 
       <p className="text-base text-muted max-w-xl leading-relaxed mb-12">
