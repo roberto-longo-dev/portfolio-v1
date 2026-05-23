@@ -1,80 +1,93 @@
 import SectionLabel from "@/components/ui/SectionLabel";
-import AemEdsSolutions from "@/components/case-studies/AemEdsSolutions";
+import AemSitesSolutions from "@/components/case-studies/AemSitesSolutions";
 
 const stack = [
-  "AEM Edge Delivery Services",
-  "Universal Editor",
-  "Cloudflare Workers",
-  "Cloudflare Zero Trust",
-  "Azure AD",
-  "Vanilla JS",
-  "Wrangler CLI",
-  "GitHub",
+  "AEM Sites as a Cloud Service",
+  "Java",
+  "OSGi",
+  "Sling Models",
+  "Sling Servlets",
+  "HTL",
+  "Apache Jackrabbit (JCR)",
+  "Webpack",
+  "Touch UI",
+  "WCAG 2.1",
+  "JUnit",
+  "AEM Mocks",
+  "Mockito",
+  "Maven",
+  "Git",
 ];
 
 const problems = [
   {
-    title: "Preview environments were publicly accessible",
-    body: "Any .aem.page or .aem.live URL was reachable without authentication — unreleased content, work-in-progress layouts, and reserved assets were exposed to anyone with the link.",
+    title: "Adding components to an existing platform without regressions",
+    body: "The platform was already in production with real users. New component development had to integrate cleanly with existing architecture — Sling Models, JCR content structure, clientlib dependencies — without introducing regressions or breaking existing authored content.",
   },
   {
-    title: "Vanilla JS on EDS scales poorly on multi-developer teams",
-    body: "EDS components are built in plain JavaScript. Without governance, each developer writes their own data extraction logic from AEM dialog fields — duplicated, inconsistent, unmaintainable across a team.",
+    title: "Frontend performance: critical vs page-level clientlibs",
+    body: "The existing clientlib strategy loaded all component CSS and JS at page level. As the component library grew, this created unnecessary render-blocking resources on pages where those components were not present.",
   },
   {
-    title: "Two brands/sites, 29 languages, one repository",
-    body: "Shared codebase with differentiated design per brand/site. Content updates, design changes, and language rollouts needed to be independent without cross-site regressions.",
+    title: "Touch UI dialog complexity",
+    body: "Several components required non-standard authoring experiences: conditional field visibility, custom validators, and multifield configurations. Standard AEM dialog patterns were insufficient and required custom Touch UI extensions.",
   },
   {
-    title: "Edge personalization gap",
-    body: "User-based content (private areas, dashboards) requires runtime data injection. Client-side fetching would expose API calls and degrade performance. A server-side approach without a dedicated application server was needed.",
+    title: "Accessibility compliance across new and existing components",
+    body: "New components had to meet WCAG 2.1 AA requirements. Several existing components also had accessibility gaps that needed remediation without disrupting authored content or visual design.",
+  },
+  {
+    title: "Unit test coverage on Sling Models",
+    body: "The existing codebase had low unit test coverage on Java models. New models had to ship with comprehensive test coverage, and existing critical models needed retroactive test addition.",
   },
 ];
 
 const results = [
-  { metric: "Preview environments protected", result: "6 (STAGE Live, STAGE Preview, PROD Preview × 2 brands/sites)" },
-  { metric: "Languages managed", result: "29" },
-  { metric: "Component development effort", result: "−40%" },
-  { metric: "Unauthorized access incidents", result: "0 post-implementation" },
+  { metric: "New components delivered", result: "10+" },
+  { metric: "Unit test coverage on new models", result: ">90%" },
+  { metric: "Clientlib payload reduction", result: "~35% on component-light pages" },
+  { metric: "Accessibility issues resolved", result: "100+ across already existing components" },
+  { metric: "Production regressions introduced", result: "0" },
 ];
 
 const toc = [
-  { label: "Overview",    href: "#overview" },
-  { label: "Challenges",  href: "#challenges" },
-  { label: "Solutions",   href: "#solutions" },
-  { label: "Results",     href: "#results" },
-  { label: "Stack",       href: "#stack" },
+  { label: "Overview",   href: "#overview" },
+  { label: "Challenges", href: "#challenges" },
+  { label: "Solutions",  href: "#solutions" },
+  { label: "Results",    href: "#results" },
+  { label: "Stack",      href: "#stack" },
 ];
 
-export default function AemEdsCaseStudy() {
+export default function AemSitesCaseStudy() {
   return (
     <div className="lg:grid lg:grid-cols-[1fr_148px] lg:gap-16 lg:items-start">
       <article className="space-y-16 min-w-0">
         <header>
           <SectionLabel>Case Study</SectionLabel>
           <h1 className="mt-4 text-4xl font-semibold tracking-tight">
-            Enterprise Pharma Web Platform
+            Enterprise Financial Web Platform
           </h1>
           <p className="mt-1 font-dm-mono text-xs text-accent uppercase tracking-widest">
-            AEM Edge Delivery Services
+            AEM Sites as a Cloud Service
           </p>
           <p className="mt-3 text-muted text-sm max-w-xl leading-relaxed">
-            Zero Trust security architecture, component acceleration framework, and multi-language
-            governance for a European pharma corporate client.
+            Full-stack AEM development for a European financial services enterprise — building new
+            components, integrating backend services, and improving platform quality through
+            accessibility, performance, and test coverage.
           </p>
           <span className="inline-block mt-4 font-dm-mono text-[10px] text-muted uppercase tracking-widest">
-            Deloitte Digital · 2025-2026
+            Deloitte Digital · 2024-2025
           </span>
         </header>
 
         <section id="overview">
           <SectionLabel>Overview</SectionLabel>
           <p className="mt-4 text-muted text-sm leading-relaxed max-w-2xl">
-            Led the architecture and delivery of two corporate websites for a European pharma
-            enterprise on AEM Edge Delivery Services with Universal Editor. The platform serves up
-            to 29 languages across two brands/sites from a shared codebase, with differentiated
-            design per brand. Team of 5 engineers, end-to-end ownership from architecture to
-            post-launch.
+            Led development of new features and components on an existing AEMaaCS platform for a
+            European financial services client. Worked across the full AEM stack — Java backend
+            (Sling Models, Sling Servlets, OSGi), HTL templates, Touch UI dialog customisation,
+            frontend clientlib architecture, and accessibility compliance. Delivered against strict
+            quality standards with comprehensive unit test coverage.
           </p>
         </section>
 
@@ -95,7 +108,7 @@ export default function AemEdsCaseStudy() {
 
         <section id="solutions">
           <SectionLabel>Solutions</SectionLabel>
-          <AemEdsSolutions />
+          <AemSitesSolutions />
         </section>
 
         <section id="results">

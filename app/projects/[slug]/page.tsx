@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import BetPlatformCaseStudy from "@/components/case-studies/BetPlatform";
 import AemEdsCaseStudy from "@/components/case-studies/AemEds";
+import AemSitesCaseStudy from "@/components/case-studies/AemSites";
 import AwakeCaseStudy from "@/components/case-studies/Awake";
 
 type CaseStudy = {
@@ -26,6 +27,13 @@ const caseStudies: Record<string, CaseStudy> = {
       "Zero Trust security architecture, component acceleration framework, and multi-language governance for a European pharma corporate client on AEM Edge Delivery Services.",
     ogImage: "/og-image-aem-eds.png",
     component: AemEdsCaseStudy,
+  },
+  "aem-sites": {
+    title: "Enterprise Financial Web Platform",
+    description:
+      "AEMaaCS component development across the full stack — Java Sling Models, HTL, Webpack clientlib optimisation, Touch UI dialogs, accessibility, and unit testing for a financial services enterprise client.",
+    ogImage: "/og-image-aem-sites.png",
+    component: AemSitesCaseStudy,
   },
   awake: {
     title: "Awake — Specialty Coffee Brand",
