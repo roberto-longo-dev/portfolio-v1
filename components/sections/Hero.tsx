@@ -16,11 +16,11 @@ export default function Hero() {
       </h1>
 
       <p className="text-lg text-muted font-medium mb-3">
-        Full-Stack Engineer · Enterprise Systems &amp; Modern Stack
+        Full-Stack Engineer · Enterprise Delivery &amp; Consulting
       </p>
 
       <p className="text-base text-muted max-w-xl leading-relaxed mb-12">
-          Dev lead on two major enterprise projects. Full-stack background across content platforms, edge infrastructure, and modern web delivery.
+          Tech lead on two enterprise projects across pharma and financial services. Full-stack background spanning backend services, edge infrastructure, and frontend delivery — with end-to-end ownership from estimation to go-live.
       </p>
 
       <div className="flex flex-wrap items-center gap-4">

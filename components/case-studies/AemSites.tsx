@@ -8,6 +8,8 @@ const stack = [
   "Sling Models",
   "Sling Servlets",
   "HTL",
+  "AEM Editable Templates",
+  "Style System",
   "Apache Jackrabbit (JCR)",
   "Webpack",
   "Touch UI",
@@ -85,9 +87,17 @@ export default function AemSitesCaseStudy() {
           <p className="mt-4 text-muted text-sm leading-relaxed max-w-2xl">
             Led development of new features and components on an existing AEMaaCS platform for a
             European financial services client. Worked across the full AEM stack — Java backend
-            (Sling Models, Sling Servlets, OSGi), HTL templates, Touch UI dialog customisation,
-            frontend clientlib architecture, and accessibility compliance. Delivered against strict
-            quality standards with comprehensive unit test coverage.
+            (Sling Models, Sling Servlets, OSGi), HTL, Touch UI dialog customisation, clientlib
+            architecture, and accessibility compliance. Delivered against strict quality standards
+            with comprehensive unit test coverage.
+          </p>
+          <p className="mt-3 text-muted text-sm leading-relaxed max-w-2xl">
+            Beyond technical delivery, I acted as tech lead for a team of 3–5 engineers — owning
+            estimation, sprint organisation, and task breakdown in Agile. Worked directly with the
+            client throughout the engagement to ensure business requirements were correctly
+            translated into development features, managing SIT and UAT phases and coordinating the
+            go-live plan. Maintained commercial awareness across the delivery, balancing scope,
+            quality, and timeline at every stage.
           </p>
         </section>
 

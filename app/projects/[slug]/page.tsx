@@ -31,7 +31,7 @@ const caseStudies: Record<string, CaseStudy> = {
   "aem-sites": {
     title: "Enterprise Financial Web Platform",
     description:
-      "AEMaaCS component development across the full stack — Java Sling Models, HTL, Webpack clientlib optimisation, Touch UI dialogs, accessibility, and unit testing for a financial services enterprise client.",
+      "AEMaaCS component development across the full stack — Java Sling Models, HTL, Webpack clientlib optimisation with naming convention strategy, AEM Editable Templates with Style System policies, Touch UI dialogs, accessibility, and unit testing for a financial services enterprise client.",
     ogImage: "/og-image-aem-sites.png",
     component: AemSitesCaseStudy,
   },

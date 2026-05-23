@@ -72,9 +72,16 @@ export default function AemEdsCaseStudy() {
           <p className="mt-4 text-muted text-sm leading-relaxed max-w-2xl">
             Led the architecture and delivery of two corporate websites for a European pharma
             enterprise on AEM Edge Delivery Services with Universal Editor. The platform serves up
-            to 29 languages across two brands/sites from a shared codebase, with differentiated
-            design per brand. Team of 5 engineers, end-to-end ownership from architecture to
-            post-launch.
+            to 29 languages across two brands from a shared codebase, with differentiated design
+            per brand.
+          </p>
+          <p className="mt-3 text-muted text-sm leading-relaxed max-w-2xl">
+            In addition to architecture and technical decisions, I led a team of 5 engineers —
+            owning estimation, sprint planning, and task breakdown in Agile. Managed SIT and UAT
+            cycles, and coordinated directly with the client from requirements through go-live,
+            ensuring business needs were correctly translated into technical delivery at every
+            sprint. Maintained commercial awareness throughout the engagement, balancing scope,
+            quality, and timeline under enterprise delivery constraints.
           </p>
         </section>
 
