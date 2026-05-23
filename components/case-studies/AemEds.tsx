@@ -137,7 +137,7 @@ export default function AemEdsCaseStudy() {
             {stack.map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 text-xs border border-border text-foreground rounded-sm"
+                className="px-3 py-1 text-xs bg-[#1a1a1a] text-muted rounded-sm select-none"
               >
                 {tech}
               </span>
