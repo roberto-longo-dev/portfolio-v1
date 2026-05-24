@@ -16,7 +16,7 @@ const solutions: Solution[] = [
     number: "01",
     title: "Full-stack AEM Component Development",
     summary:
-      "Built new components end-to-end: OSGi-registered Sling Models, Sling Servlets, HTL for server-side rendering, AEM Editable Templates with Style System policies, and Touch UI dialogs — integrating cleanly with the existing production codebase.",
+      "Built new components end-to-end: OSGi-registered Sling Models, Sling Servlets, HTL for server-side rendering, AEM Editable Templates with Style System policies, and Touch UI dialogs - integrating cleanly with the existing production codebase.",
     content: (
       <div className="space-y-4 pt-5 border-t border-border mt-4">
         <p className="text-muted text-sm leading-relaxed">
@@ -43,7 +43,7 @@ const solutions: Solution[] = [
             </p>
             <p className="text-muted text-sm leading-relaxed">
               A custom Sling Servlet was implemented to handle form submission and integrate with an
-              external mail service — covering a use case where the out-of-the-box AEM Forms and
+              external mail service - covering a use case where the out-of-the-box AEM Forms and
               content APIs were insufficient. The Servlet was registered by resource type, keeping
               the endpoint co-located with the form component it served.
             </p>
@@ -51,11 +51,11 @@ const solutions: Solution[] = [
               To manage the mail service credentials and endpoint configuration securely, a dedicated
               OSGi configuration was created. This allowed environment-specific values (API keys,
               sender addresses, service URLs) to be injected at runtime via AEM&apos;s OSGi config
-              files — no hardcoded values in code, and no redeployment required to update
+              files - no hardcoded values in code, and no redeployment required to update
               configuration across environments.
             </p>
             <p className="text-muted text-sm leading-relaxed mt-2">
-              This was a targeted, single-purpose integration — not a general pattern applied across
+              This was a targeted, single-purpose integration - not a general pattern applied across
               components.
             </p>
           </div>
@@ -71,10 +71,10 @@ const solutions: Solution[] = [
             </p>
             <ul className="mt-2 space-y-2 text-sm text-muted leading-relaxed">
               {[
-                "data-sly-test for conditional rendering — preventing empty or broken HTML from reaching the DOM when optional model values were missing or null",
-                "data-sly-template and data-sly-call for intra-component templating — used when a component needed to cover multiple layout scenarios, keeping the markup clean and avoiding duplication",
+                "data-sly-test for conditional rendering - preventing empty or broken HTML from reaching the DOM when optional model values were missing or null",
+                "data-sly-template and data-sly-call for intra-component templating - used when a component needed to cover multiple layout scenarios, keeping the markup clean and avoiding duplication",
                 "data-sly-use with scoped variables to compose complex component structures without logic leaking into markup",
-                "context attribute applied correctly where needed — for example, when working with the OOTB Embed component, context was set explicitly to avoid XSS vulnerabilities introduced by unescaped HTML output",
+                "context attribute applied correctly where needed - for example, when working with the OOTB Embed component, context was set explicitly to avoid XSS vulnerabilities introduced by unescaped HTML output",
               ].map((item) => (
                 <li key={item} className="flex gap-3">
                   <span className="text-accent shrink-0">—</span>
@@ -94,7 +94,7 @@ const solutions: Solution[] = [
             </p>
             <p className="text-muted text-sm leading-relaxed">
               Component behaviour and visual variants were configured per-template via policy
-              definitions — no code changes required to enable or restrict features per template. The
+              definitions - no code changes required to enable or restrict features per template. The
               Style System allowed authors to select pre-approved component variants directly from the
               Touch UI, with the corresponding CSS classes injected at runtime based on the active
               policy. This decoupled visual variation from component code, reducing the need for
@@ -121,7 +121,7 @@ const solutions: Solution[] = [
     number: "02",
     title: "Clientlib Architecture: Critical Path vs Component-Scoped",
     summary:
-      "Separated clientlibs into two tiers with a structured naming convention — a critical <head> library for above-the-fold styles and component-scoped libraries loaded only when present. All JS and CSS minified via Webpack for production.",
+      "Separated clientlibs into two tiers with a structured naming convention - a critical <head> library for above-the-fold styles and component-scoped libraries loaded only when present. All JS and CSS minified via Webpack for production.",
     content: (
       <div className="space-y-5 pt-5 border-t border-border mt-4">
         <p className="text-muted text-sm leading-relaxed">
@@ -138,11 +138,11 @@ const solutions: Solution[] = [
             },
             {
               label: "Component-scoped clientlibs",
-              body: "Each component owns its own clientlib, loaded only when that component is present on the page — unused components contribute zero bytes to the page payload.",
+              body: "Each component owns its own clientlib, loaded only when that component is present on the page - unused components contribute zero bytes to the page payload.",
             },
             {
               label: "Naming convention & programmatic resolution",
-              body: "A naming convention was established across all component clientlibs — each clientlib category followed a structured pattern (e.g. project.component.<component-name>). At page component runtime, the AEM page component resolves and includes the correct clientlib programmatically based on the component name present on the page, without hardcoding a static list of dependencies. This made the inclusion mechanism self-maintaining as new components were added.",
+              body: "A naming convention was established across all component clientlibs - each clientlib category followed a structured pattern (e.g. project.component.<component-name>). At page component runtime, the AEM page component resolves and includes the correct clientlib programmatically based on the component name present on the page, without hardcoding a static list of dependencies. This made the inclusion mechanism self-maintaining as new components were added.",
             },
             {
               label: "Webpack minification",
@@ -193,7 +193,7 @@ const solutions: Solution[] = [
           {[
             {
               label: "Granite condition-based field visibility",
-              body: "Fields shown or hidden dynamically based on authored selections — implemented via Granite UI conditions on dialog field nodes. Authors see only the fields relevant to their current configuration.",
+              body: "Fields shown or hidden dynamically based on authored selections - implemented via Granite UI conditions on dialog field nodes. Authors see only the fields relevant to their current configuration.",
             },
             {
               label: "Custom validators",
@@ -201,7 +201,7 @@ const solutions: Solution[] = [
             },
             {
               label: "Nested multifield configurations",
-              body: "Repeatable content structures — lists of items with their own sub-fields — implemented with nested Granite multifields. All dialog extensions version-controlled and documented for team auditability.",
+              body: "Repeatable content structures - lists of items with their own sub-fields - implemented with nested Granite multifields. All dialog extensions version-controlled and documented for team auditability.",
             },
           ].map(({ label, body }) => (
             <div key={label}>
@@ -244,7 +244,7 @@ const solutions: Solution[] = [
             },
             {
               label: "ARIA & alt text governance",
-              body: "ARIA attributes added for dynamic content regions. Alt text requirements for image components enforced at the Touch UI dialog level — authors cannot publish without providing alternative text.",
+              body: "ARIA attributes added for dynamic content regions. Alt text requirements for image components enforced at the Touch UI dialog level - authors cannot publish without providing alternative text.",
             },
           ].map(({ label, body }) => (
             <div key={label}>
@@ -263,7 +263,7 @@ const solutions: Solution[] = [
     number: "05",
     title: "Unit Testing with AEM Mocks & Mockito",
     summary:
-      "Comprehensive JUnit tests for all new Sling Models using io.wcm AEM Mocks and Mockito — covering content mapping, OSGi injection, edge cases, and servlet handling.",
+      "Comprehensive JUnit tests for all new Sling Models using io.wcm AEM Mocks and Mockito - covering content mapping, OSGi injection, edge cases, and servlet handling.",
     content: (
       <div className="space-y-4 pt-5 border-t border-border mt-4">
         <p className="text-muted text-sm leading-relaxed">
@@ -275,7 +275,7 @@ const solutions: Solution[] = [
           {[
             {
               label: "AEM Mocks (io.wcm)",
-              body: "Tests run against a simulated AEM context — JCR content loaded from JSON fixtures, OSGi service registry mocked, Sling resource resolution working without a running AEM instance. Fast, deterministic, CI-compatible.",
+              body: "Tests run against a simulated AEM context - JCR content loaded from JSON fixtures, OSGi service registry mocked, Sling resource resolution working without a running AEM instance. Fast, deterministic, CI-compatible.",
             },
             {
               label: "Mockito for service dependencies",
@@ -306,12 +306,12 @@ const solutions: Solution[] = [
     number: "06",
     title: "German Regulatory Requirements",
     summary:
-      "Extended existing components with locale-aware conditional rendering — regulatory disclosures injected via HTL path/locale checks and hidden from non-German authors at the Touch UI dialog level. No duplicate components.",
+      "Extended existing components with locale-aware conditional rendering - regulatory disclosures injected via HTL path/locale checks and hidden from non-German authors at the Touch UI dialog level. No duplicate components.",
     content: (
       <div className="space-y-4 pt-5 border-t border-border mt-4">
         <p className="text-muted text-sm leading-relaxed">
           The financial services client operated under German regulatory requirements that mandated
-          additional content disclosures on certain pages — legally required for the German market
+          additional content disclosures on certain pages - legally required for the German market
           but must not appear on other regional sites.
         </p>
         <div className="space-y-4">
@@ -320,7 +320,7 @@ const solutions: Solution[] = [
               HTL conditional rendering
             </p>
             <p className="text-muted text-sm leading-relaxed">
-              Components were extended with additional optional authoring fields — for example, a
+              Components were extended with additional optional authoring fields - for example, a
               disclaimer text field for the German section. At the HTL level,{" "}
               <span className="font-dm-mono text-xs">data-sly-test</span> checked the page path or
               locale, ensuring regulatory content was injected into the markup only when rendering
@@ -333,7 +333,7 @@ const solutions: Solution[] = [
             </p>
             <p className="text-muted text-sm leading-relaxed">
               Authors outside the German section would not see the regulatory field in the Touch UI
-              dialog — controlled via custom JS logic attached to the dialog. This kept the authoring
+              dialog - controlled via custom JS logic attached to the dialog. This kept the authoring
               experience clean for non-German markets while enforcing compliance at the component
               level for those that required it.
             </p>
@@ -344,7 +344,7 @@ const solutions: Solution[] = [
             </p>
             <p className="text-muted text-sm leading-relaxed">
               No separate component variants or duplicated code were required. The same component
-              served all markets — regulatory content was conditionally present or absent based on
+              served all markets - regulatory content was conditionally present or absent based on
               context.
             </p>
           </div>
@@ -357,14 +357,14 @@ const solutions: Solution[] = [
     number: "07",
     title: "RTL Language Support",
     summary:
-      "Replaced directional CSS properties with logical equivalents across all affected components — layout direction driven entirely by the document dir attribute, with no duplicate stylesheets or per-language overrides.",
+      "Replaced directional CSS properties with logical equivalents across all affected components - layout direction driven entirely by the document dir attribute, with no duplicate stylesheets or per-language overrides.",
     content: (
       <div className="space-y-4 pt-5 border-t border-border mt-4">
         <p className="text-muted text-sm leading-relaxed">
           The platform served multiple languages and countries, including right-to-left (RTL)
           languages. Component layouts built with directional CSS properties (left, right,
           margin-left, padding-right) would break or display incorrectly when rendered in RTL
-          context — requiring either duplicated stylesheets or brittle overrides.
+          context - requiring either duplicated stylesheets or brittle overrides.
         </p>
         <div className="space-y-4">
           <div>
@@ -393,7 +393,7 @@ const solutions: Solution[] = [
             </p>
             <p className="text-muted text-sm leading-relaxed">
               No duplicate stylesheets, no per-language CSS overrides. The switch between LTR and
-              RTL is seamless and automatic — adding a new RTL language requires no CSS changes,
+              RTL is seamless and automatic - adding a new RTL language requires no CSS changes,
               only correct{" "}
               <span className="font-dm-mono text-xs">dir</span> attribute configuration on the page
               template.

@@ -20,7 +20,7 @@ export default function Hero() {
       </p>
 
       <p className="text-base text-muted max-w-xl leading-relaxed mb-12">
-          Tech lead on two enterprise projects across pharma and financial services. Full-stack background spanning backend services, edge infrastructure, and frontend delivery — with end-to-end ownership from estimation to go-live.
+          Tech lead on two enterprise projects across pharma and financial services. Full-stack background spanning backend services, edge infrastructure, and frontend delivery - with end-to-end ownership from estimation to go-live.
       </p>
 
       <div className="flex flex-wrap items-center gap-4">
