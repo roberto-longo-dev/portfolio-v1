@@ -24,7 +24,7 @@ const stack = [
 const problems = [
   {
     title: "Adding components to an existing platform without regressions",
-    body: "The platform was already in production with real users. New component development had to integrate cleanly with existing architecture — Sling Models, JCR content structure, clientlib dependencies — without introducing regressions or breaking existing authored content.",
+    body: "The platform was already in production with real users. New component development had to integrate cleanly with existing architecture, Sling Models, JCR content structure, clientlib dependencies, without introducing regressions or breaking existing authored content.",
   },
   {
     title: "Frontend performance: critical vs page-level clientlibs",
@@ -73,7 +73,7 @@ export default function AemSitesCaseStudy() {
             AEM Sites as a Cloud Service
           </p>
           <p className="mt-3 text-muted text-sm max-w-xl leading-relaxed">
-            Full-stack AEM development for a European financial services enterprise — building new
+            Full-stack AEM development for a European financial services enterprise, building new
             components, integrating backend services, and improving platform quality through
             accessibility, performance, and test coverage.
           </p>
@@ -86,13 +86,13 @@ export default function AemSitesCaseStudy() {
           <SectionLabel>Overview</SectionLabel>
           <p className="mt-4 text-muted text-sm leading-relaxed max-w-2xl">
             Led development of new features and components on an existing AEMaaCS platform for a
-            European financial services client. Worked across the full AEM stack — Java backend
+            European financial services client. Worked across the full AEM stack, Java backend
             (Sling Models, Sling Servlets, OSGi), HTL, Touch UI dialog customisation, clientlib
             architecture, and accessibility compliance. Delivered against strict quality standards
             with comprehensive unit test coverage.
           </p>
           <p className="mt-3 text-muted text-sm leading-relaxed max-w-2xl">
-            Beyond technical delivery, I acted as tech lead for a team of 3–5 engineers — owning
+            Beyond technical delivery, I acted as tech lead for a team of 3–5 engineers, owning
             estimation, sprint organisation, and task breakdown in Agile. Worked directly with the
             client throughout the engagement to ensure business requirements were correctly
             translated into development features, managing SIT and UAT phases and coordinating the

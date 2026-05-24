@@ -15,11 +15,11 @@ const stack = [
 const problems = [
   {
     title: "Preview environments were publicly accessible",
-    body: "Any .aem.page or .aem.live URL was reachable without authentication — unreleased content, work-in-progress layouts, and reserved assets were exposed to anyone with the link.",
+    body: "Any .aem.page or .aem.live URL was reachable without authentication: unreleased content, work-in-progress layouts, and reserved assets were exposed to anyone with the link.",
   },
   {
     title: "Vanilla JS on EDS scales poorly on multi-developer teams",
-    body: "EDS components are built in plain JavaScript. Without governance, each developer writes their own data extraction logic from AEM dialog fields — duplicated, inconsistent, unmaintainable across a team.",
+    body: "EDS components are built in plain JavaScript. Without governance, each developer writes their own data extraction logic from AEM dialog fields, duplicated, inconsistent, unmaintainable across a team.",
   },
   {
     title: "Two brands/sites, 29 languages, one repository",
@@ -76,7 +76,7 @@ export default function AemEdsCaseStudy() {
             per brand.
           </p>
           <p className="mt-3 text-muted text-sm leading-relaxed max-w-2xl">
-            In addition to architecture and technical decisions, I led a team of 5 engineers —
+            In addition to architecture and technical decisions, I led a team of 5 engineers,
             owning estimation, sprint planning, and task breakdown in Agile. Managed SIT and UAT
             cycles, and coordinated directly with the client from requirements through go-live,
             ensuring business needs were correctly translated into technical delivery at every

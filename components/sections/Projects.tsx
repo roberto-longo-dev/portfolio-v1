@@ -26,7 +26,7 @@ const projects = [
     title: "Enterprise Financial Web Platform",
     subtitle: "AEMaaCS · AEM Sites",
     description:
-      "Enhancements to an existing enterprise web platform for a financial services client — new components built on AEMaaCS best practices across the full stack: Java backend, HTL templates, frontend delivery, accessibility, and performance.",
+      "Enhancements to an existing enterprise web platform for a financial services client: new components built on AEMaaCS best practices across the full stack: Java backend, HTL templates, frontend delivery, accessibility, and performance.",
     badge: "Case Study",
     slug: "aem-sites",
     stack: ["AEMaaCS", "Java", "HTL", "Webpack", "Touch UI", "Accessibility", "Performance"],

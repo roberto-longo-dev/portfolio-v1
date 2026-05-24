@@ -74,7 +74,7 @@ export default function AwakeCaseStudy() {
         <SectionLabel>Case Study</SectionLabel>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight">Awake</h1>
         <p className="mt-1 font-dm-mono text-xs text-accent uppercase tracking-widest">
-          Specialty Coffee Brand — Headless E-commerce
+          Specialty Coffee Brand, Headless E-commerce
         </p>
         <p className="mt-3 text-muted text-sm max-w-xl leading-relaxed">
           Full-stack headless e-commerce platform for a fictional Italian specialty coffee
@@ -115,8 +115,8 @@ Stripe    (payments, subscriptions)`}</code>
           </pre>
           <div className="space-y-3">
             {[
-              { name: "apps/web",              desc: "Next.js 15 — App Router, Server Components, client interactions" },
-              { name: "apps/studio",           desc: "Sanity Studio v3 — content modelling, editorial interface" },
+              { name: "apps/web",              desc: "Next.js 15, App Router, Server Components, client interactions" },
+              { name: "apps/studio",           desc: "Sanity Studio v3: content modelling, editorial interface" },
               { name: "packages/sanity-types", desc: "Shared TypeScript types generated from Sanity schema" },
             ].map(({ name, desc }) => (
               <div key={name} className="flex flex-col sm:flex-row sm:gap-6">
