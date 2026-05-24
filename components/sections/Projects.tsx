@@ -26,7 +26,7 @@ const projects = [
     title: "Enterprise Financial Web Platform",
     subtitle: "AEMaaCS · AEM Sites",
     description:
-      "Enhancements to an existing enterprise web platform for a financial services client — new components built on AEMaaCS best practices across the full stack: Java backend, HTL templates, frontend delivery, accessibility, and performance.",
+      "Enhancements to an existing enterprise web platform for a financial services client - new components built on AEMaaCS best practices across the full stack: Java backend, HTL templates, frontend delivery, accessibility, and performance.",
     badge: "Case Study",
     slug: "aem-sites",
     stack: ["AEMaaCS", "Java", "HTL", "Webpack", "Touch UI", "Accessibility", "Performance"],
@@ -37,7 +37,7 @@ const projects = [
     subtitle: "Headless E-commerce Platform",
     description:
       "Headless e-commerce for a fictional Italian specialty coffee brand. CMS-driven content, authentication, e-commerce, and subscription payments.",
-    badge: "Live — Release 1",
+    badge: "Live - Release 1",
     slug: "awake",
     stack: ["React","Next.js 15", "Sanity v3", "Stripe", "NextAuth v5", "PostgreSQL", "Turborepo"],
     liveUrl: "https://awake.robertolongo.dev",

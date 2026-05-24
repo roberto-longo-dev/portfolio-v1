@@ -1,6 +1,6 @@
 # portfolio-v1
 
-Personal portfolio — Roberto Longo. Built with Next.js 14, TypeScript, Tailwind CSS.
+Personal portfolio - Roberto Longo. Built with Next.js 14, TypeScript, Tailwind CSS.
 
 ## Local setup
 

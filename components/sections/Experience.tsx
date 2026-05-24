@@ -26,7 +26,7 @@ export default function Experience() {
       <SectionLabel>Experience</SectionLabel>
       <div className="mt-6">
         <p className="font-dm-mono text-xs text-muted uppercase tracking-widest mb-6">
-          Deloitte Digital · Rome, Italy · 2021 — Present
+          Deloitte Digital · Rome, Italy · 2021 - Present
         </p>
         <div className="space-y-0">
           {roles.map(({ title, period, description }, i) => (

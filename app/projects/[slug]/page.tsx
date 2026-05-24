@@ -31,12 +31,12 @@ const caseStudies: Record<string, CaseStudy> = {
   "aem-sites": {
     title: "Enterprise Financial Web Platform",
     description:
-      "AEMaaCS component development across the full stack — Java Sling Models, HTL, Webpack clientlib optimisation with naming convention strategy, AEM Editable Templates with Style System policies, Touch UI dialogs, accessibility, and unit testing for a financial services enterprise client.",
+      "AEMaaCS component development across the full stack - Java Sling Models, HTL, Webpack clientlib optimisation with naming convention strategy, AEM Editable Templates with Style System policies, Touch UI dialogs, accessibility, and unit testing for a financial services enterprise client.",
     ogImage: "/og-image-aem-sites.png",
     component: AemSitesCaseStudy,
   },
   awake: {
-    title: "Awake — Specialty Coffee Brand",
+    title: "Awake - Specialty Coffee Brand",
     description:
       "Full-stack headless e-commerce platform for a fictional Italian specialty coffee roaster. Next.js 15, Sanity v3, Stripe, NextAuth, PostgreSQL.",
     ogImage: "/og-image-awake.png",
@@ -53,16 +53,16 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   if (!study) return {};
 
   return {
-    title: `${study.title} — Roberto Longo`,
+    title: `${study.title} - Roberto Longo`,
     description: study.description,
     openGraph: {
-      title: `${study.title} — Roberto Longo`,
+      title: `${study.title} - Roberto Longo`,
       description: study.description,
       images: [{ url: study.ogImage, width: 1200, height: 630, alt: study.title }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${study.title} — Roberto Longo`,
+      title: `${study.title} - Roberto Longo`,
       description: study.description,
       images: [study.ogImage],
     },

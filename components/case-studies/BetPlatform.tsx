@@ -63,9 +63,9 @@ export default function BetPlatformCaseStudy() {
           </p>
           <ul className="space-y-2 pl-0">
             {[
-              { name: "apps/api", desc: "Fastify + TypeScript + Prisma — core business logic, auth, WebSocket server" },
-              { name: "apps/web", desc: "Next.js frontend — server-rendered UI consuming the API" },
-              { name: "cloudflare/geo-worker", desc: "Cloudflare Worker — edge geoblocking before requests reach origin" },
+              { name: "apps/api", desc: "Fastify + TypeScript + Prisma - core business logic, auth, WebSocket server" },
+              { name: "apps/web", desc: "Next.js frontend - server-rendered UI consuming the API" },
+              { name: "cloudflare/geo-worker", desc: "Cloudflare Worker - edge geoblocking before requests reach origin" },
             ].map(({ name, desc }) => (
               <li key={name} className="flex flex-col sm:flex-row sm:gap-6">
                 <span className="font-dm-mono text-xs text-foreground uppercase tracking-wide w-48 shrink-0 pt-0.5">
