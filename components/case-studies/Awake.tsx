@@ -1,6 +1,7 @@
 import SectionLabel from "@/components/ui/SectionLabel";
 
 const stack = [
+  "React",
   "Next.js 15",
   "Sanity v3",
   "Stripe",

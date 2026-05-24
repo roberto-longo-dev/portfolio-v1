@@ -37,10 +37,11 @@ const projects = [
     subtitle: "Headless E-commerce Platform",
     description:
       "Headless e-commerce for a fictional Italian specialty coffee brand. CMS-driven content, authentication, e-commerce, and subscription payments.",
-    badge: "In Progress",
+    badge: "Live — Release 1",
     slug: "awake",
-    stack: ["Next.js 15", "Sanity v3", "Stripe", "NextAuth v5", "PostgreSQL", "Turborepo"],
-    liveUrl: null,
+    stack: ["React","Next.js 15", "Sanity v3", "Stripe", "NextAuth v5", "PostgreSQL", "Turborepo"],
+    liveUrl: "https://awake.robertolongo.dev",
+    liveLabel: "Live Demo →",
   },
 ];
 
@@ -90,7 +91,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="px-3 py-1.5 border border-border text-foreground text-xs font-medium rounded-sm hover:border-muted transition-colors whitespace-nowrap"
                 >
-                  Live Demo →
+                  {project.liveLabel ?? "Live Demo →"}
                 </a>
               )}
             </div>
