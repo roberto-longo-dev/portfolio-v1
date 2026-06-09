@@ -37,7 +37,7 @@ const projects = [
     subtitle: "Headless E-commerce Platform",
     description:
       "Headless e-commerce for a fictional Italian specialty coffee brand. CMS-driven content, authentication, e-commerce, and subscription payments.",
-    badge: "Live - Release 1",
+    badge: "Live - Release 2",
     slug: "awake",
     stack: ["React","Next.js 15", "Sanity v3", "Stripe", "NextAuth v5", "PostgreSQL", "Turborepo"],
     liveUrl: "https://awake.robertolongo.dev",
