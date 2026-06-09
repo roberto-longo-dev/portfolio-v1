@@ -18,7 +18,7 @@ const releases = [
   {
     label: "Release 1",
     title: "Base Headless",
-    status: "In Progress" as const,
+    status: "Live" as const,
     items: [
       "Homepage and product pages driven by Sanity CMS",
       "Blog with GROQ queries and server-side rendering",
@@ -30,7 +30,7 @@ const releases = [
   {
     label: "Release 2",
     title: "Private Area",
-    status: "Pending" as const,
+    status: "Live" as const,
     items: [
       "Authentication with NextAuth v5",
       "Registration, login, and user dashboard",
@@ -41,7 +41,7 @@ const releases = [
   {
     label: "Release 3",
     title: "E-commerce",
-    status: "Pending" as const,
+    status: "In Progress" as const,
     items: [
       "Product detail pages",
       "Cart and checkout flow",
