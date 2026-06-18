@@ -11,8 +11,17 @@ const stack = [
   "Next.js",
 ];
 
+const toc = [
+  { label: "Overview",    href: "#overview" },
+  { label: "Architecture",  href: "#architecture" },
+  { label: "Technical Decisions",   href: "#techdecisions" },
+  { label: "Status",     href: "#status" },
+  { label: "Stack",       href: "#stack" },
+];
+
 export default function BetPlatformCaseStudy() {
   return (
+    <div className="lg:grid lg:grid-cols-[1fr_148px] lg:gap-16 lg:items-start">
     <article className="space-y-16">
       <header>
         <SectionLabel>Case Study</SectionLabel>
@@ -44,7 +53,7 @@ export default function BetPlatformCaseStudy() {
         </div>
       </header>
 
-      <section>
+      <section id="overview">
         <SectionLabel>Overview</SectionLabel>
         <p className="mt-4 text-muted text-sm leading-relaxed max-w-2xl">
           Full-stack betting platform built to demonstrate enterprise-grade backend patterns
@@ -54,7 +63,7 @@ export default function BetPlatformCaseStudy() {
         </p>
       </section>
 
-      <section>
+      <section id="architecture">
         <SectionLabel>Architecture</SectionLabel>
         <div className="mt-4 space-y-3 text-muted text-sm leading-relaxed max-w-2xl">
           <p>
@@ -78,7 +87,7 @@ export default function BetPlatformCaseStudy() {
         </div>
       </section>
 
-      <section>
+      <section id="techdecisions">
         <SectionLabel>Technical Decisions</SectionLabel>
         <div className="mt-4 space-y-5 max-w-2xl">
           {[
@@ -123,7 +132,7 @@ export default function BetPlatformCaseStudy() {
         </div>
       </section>
 
-      <section>
+      <section id="status">
         <SectionLabel>Status</SectionLabel>
         <p className="mt-4 text-muted text-sm leading-relaxed max-w-2xl">
           <span className="font-dm-mono text-xs text-accent uppercase tracking-widest mr-3">
@@ -133,7 +142,7 @@ export default function BetPlatformCaseStudy() {
         </p>
       </section>
 
-      <section>
+      <section id="stack">
         <SectionLabel>Stack</SectionLabel>
         <div className="mt-4 flex flex-wrap gap-2">
           {stack.map((tech) => (
@@ -147,5 +156,22 @@ export default function BetPlatformCaseStudy() {
         </div>
       </section>
     </article>
+    <aside className="hidden lg:block sticky top-8">
+            <p className="font-dm-mono text-[10px] text-muted uppercase tracking-widest mb-3">
+              On this page
+            </p>
+            <nav className="space-y-2">
+              {toc.map(({ label, href }) => (
+                <a
+                  key={href}
+                  href={href}
+                  className="block font-dm-mono text-[10px] text-muted uppercase tracking-wide hover:text-foreground transition-colors"
+                >
+                  {label}
+                </a>
+              ))}
+            </nav>
+    </aside>
+    </div>
   );
 }
