@@ -6,6 +6,9 @@ export default function About() {
       <SectionLabel>About</SectionLabel>
       <div className="mt-6 space-y-4 max-w-2xl text-muted leading-relaxed">
         <p>
+          Hello there! <br /> Welcome on my portfolio, here are a few things you should know about me.
+        </p>
+        <p>
           I&apos;m Roberto Longo, a Full-Stack Engineer with 5 years of enterprise experience at
           Deloitte Digital, delivering large-scale web platforms for clients in regulated industries
           including pharma and financial services.

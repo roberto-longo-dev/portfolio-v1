@@ -20,7 +20,7 @@ const links = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="pb-24">
+    <section id="contact">
       <SectionLabel>Contact</SectionLabel>
       <p className="mt-6 text-muted text-sm max-w-md leading-relaxed mb-8">
         Open to full-time roles and select freelance projects.<br /> Reach out via email or connect
