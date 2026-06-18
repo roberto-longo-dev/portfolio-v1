@@ -41,7 +41,7 @@ const releases = [
   {
     label: "Release 3",
     title: "E-commerce",
-    status: "In Progress" as const,
+    status: "Live" as const,
     items: [
       "Product detail pages",
       "Cart and checkout flow",
@@ -52,7 +52,7 @@ const releases = [
   {
     label: "Release 4",
     title: "Transactions",
-    status: "Pending" as const,
+    status: "In Progress" as const,
     items: [
       "One-shot payments via Stripe",
       "Monthly subscription flow",
@@ -82,9 +82,20 @@ export default function AwakeCaseStudy() {
           brand. Built to demonstrate a production-grade architecture combining a headless CMS,
           authentication, e-commerce, and subscription payments.
         </p>
-        <span className="inline-block mt-4 font-dm-mono text-[10px] text-muted uppercase tracking-widest">
-          Personal Project · In Progress
-        </span>
+        <div className="flex items-center gap-6 mt-4">
+                  <span className="font-dm-mono text-xs text-accent uppercase tracking-widest">
+                    Live [Release 3]
+                  </span>
+                  <a
+                    href="https://awake.robertolongo.dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-accent text-background text-xs font-medium rounded-sm hover:opacity-90 transition-opacity"
+                  >
+                    Live Demo →
+                  </a>
+
+                </div>
       </header>
 
       <section>
