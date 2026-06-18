@@ -13,7 +13,7 @@ export default function Calendly() {
         <section id="calendly" className="pb-24">
           <SectionLabel>Calendly</SectionLabel>
           <p className="mt-6 text-muted text-sm max-w-md leading-relaxed mb-8">
-            Looking for a meeting? <br /> Book a slot on Calendly and let's connect.
+            Looking for a meeting? <br /> Book a slot on Calendly and let&apos;s connect.
           </p>
           <div className="space-y-3">
             {links.map(({ label, href, display }) => (
