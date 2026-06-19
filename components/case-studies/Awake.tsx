@@ -93,7 +93,7 @@ export default function AwakeCaseStudy() {
             </p>
             <div className="flex items-center gap-6 mt-4">
                       <span className="font-dm-mono text-xs text-accent uppercase tracking-widest">
-                        Live [Release 3]
+                        Live - Release 3
                       </span>
                       <a
                         href="https://awake.robertolongo.dev"
@@ -101,7 +101,7 @@ export default function AwakeCaseStudy() {
                         rel="noopener noreferrer"
                         className="px-3 py-1.5 bg-accent text-background text-xs font-medium rounded-sm hover:opacity-90 transition-opacity"
                       >
-                        Live Demo →
+                        Live Demo ↗
                       </a>
 
                     </div>

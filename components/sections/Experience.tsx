@@ -1,6 +1,12 @@
 import SectionLabel from "@/components/ui/SectionLabel";
 
 const roles = [
+{
+    title: "Senior Consultant · Senior Full-Stack Engineer and Tech Lead",
+    period: "June 2026 – Present",
+    description:
+      "Continuing AEM development on a large-scale entertainment platform (200+ websites, multi-language including RTL).",
+  },
   {
     title: "Consultant · Full-Stack Engineer",
     period: "Dec 2023 – Present",

@@ -40,7 +40,7 @@ export default function BetPlatformCaseStudy() {
             rel="noopener noreferrer"
             className="px-3 py-1.5 bg-accent text-background text-xs font-medium rounded-sm hover:opacity-90 transition-opacity"
           >
-            Live Demo →
+            Live Demo ↗
           </a>
           <a
             href="https://betplatformapi-production.up.railway.app/docs"

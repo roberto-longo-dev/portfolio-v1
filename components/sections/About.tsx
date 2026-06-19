@@ -9,19 +9,19 @@ export default function About() {
           Hello there! <br /> Welcome on my portfolio, here are a few things you should know about me.
         </p>
         <p>
-          I&apos;m Roberto Longo, a Full-Stack Engineer with 5 years of enterprise experience at
+          I&apos;m Roberto Longo, a Full-Stack Engineer with <b>5 years of enterprise experience</b> at
           Deloitte Digital, delivering large-scale web platforms for clients in regulated industries
           including pharma and financial services.
         </p>
         <p>
-          I operate at the intersection of engineering and delivery: hands-on on the codebase when
+          I operate at the <b>intersection of engineering and delivery</b>: hands-on on the codebase when
           it matters, and able to own the full engagement when the project requires it. Across my
           last two projects I led teams of 3 to 5 engineers, managed estimation, sprint planning,
           SIT and UAT cycles, and coordinated client relationships from requirements through
           go-live.
         </p>
         <p>
-          I bring commercial awareness to every engagement: I understand that technical decisions
+          I bring <b>commercial awareness</b> to every engagement: I understand that technical decisions
           have business consequences, and I know how to communicate that to stakeholders. I work
           with a consultant&apos;s mindset: structured, proactive, and always oriented toward the
           client&apos;s broader objectives, not just the current sprint.
