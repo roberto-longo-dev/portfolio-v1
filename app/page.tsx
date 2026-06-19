@@ -5,6 +5,7 @@ import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
 import Contact from "@/components/sections/Contact";
 import Calendly from "@/components/sections/Calendly";
+import Certifications from "@/components/sections/Certifications";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <About />
       <Experience />
+      <Certifications />
       <Skills />
       <Projects />
       <Contact />
