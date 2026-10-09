@@ -11,7 +11,7 @@ export default function About() {
         <p>
           I&apos;m Roberto Longo, a Full-Stack Engineer with <b>5 years of enterprise experience</b> at
           Deloitte Digital, delivering large-scale web platforms for clients in regulated industries
-          including pharma and financial services.
+          including pharma and financial services. Now working as an independent AEM engineer
         </p>
         <p>
           I operate at the <b>intersection of engineering and delivery</b>: hands-on on the codebase when
